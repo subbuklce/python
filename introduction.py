@@ -38,7 +38,7 @@ print(type(a1))
 #standard/normal distribution 
 print(np.random.randn(1,2))
 print(np.random.normal(2,2,(2,3)))
-
+print('-'*80)
 #print random integers
 print(np.random.randint(1,50,3))
 print(np.random.randint(1,50,(3,2)))
@@ -49,4 +49,11 @@ print(len(a2))
 print(a2.max())
 print(a2.argmax(), a2.argmin(), a2.argsort())
 print(a2.shape)
-print(a2.reshape(2,5))
+#print(a2.reshape(2,5))
+
+#numpy index selection
+#slicing of array points to the original so keep in mind about that.
+#use np.array.copy() - to get the real copy of that array.
+print(a2)
+arry_copy = a2.copy()
+print(arry_copy * 100)
